@@ -122,8 +122,8 @@ const highlight = {
 const content1 = document.querySelector(".content1");
 
 // Developer Image
-let imageHTML = `
-<div class="portfolio-title" data-image="${devData.image}">
+let titleHTML = `
+<div class="portfolio-title">
   <pre>
 ${highlight.keyword("public")} ${highlight.keyword("struct")} Profile {
   ${highlight.type("string")} title = ${highlight.string("My Portfolio")};
@@ -188,7 +188,7 @@ let skillsHTML = `
   </div>
 `;
 
-content1.innerHTML = imageHTML + skillsHTML;
+content1.innerHTML = titleHTML + skillsHTML;
 
 // CONTENT2 = SUMMARY + INFO + EXPERIENCE + EDUCATION + PROJECTS + CERTIFICATIONS + HOBBIES
 
