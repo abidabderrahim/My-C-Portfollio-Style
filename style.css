@@ -1,0 +1,174 @@
+/* root */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --background-color: rgb(19, 20, 21);
+  --background-sec: rgb(30, 32, 36);
+  --text-color-prim: rgb(251, 251, 254);
+  --text-main-o: rgb(206, 145, 120);
+  --text-main-g: rgb(106, 153, 85);
+  --text-main-b: rgb(86, 156, 214);
+  --text-main-y: rgb(220, 220, 170);
+  --text-main-p: rgb(197, 134, 192);
+  --font-prim: "Inria Sans", sans-serif;
+}
+/* root */
+
+/* default values */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-prim);
+  color: var(--text-color-prim);
+  user-select: none;
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+
+/* default values */
+
+/* syntax content */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  position: relative;
+}
+
+.content1 {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.content1,
+.content2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.content1 .portfolio-title,
+.content1 .skills,
+.content2 .summary,
+.content2 .info,
+.content2 .experience,
+.content2 .education,
+.content2 .projects,
+.content2 .certifications,
+.content2 .hobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--background-sec);
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: "Inria Sans", monospace;
+  white-space: pre-wrap;
+}
+
+.skills li,
+.summary li,
+.experience .job p,
+.education .edu p,
+.projects li,
+.certifications li,
+.hobbies li {
+  color: var(--text-color-prim);
+}
+
+.skills h3,
+.content2 h3 {
+  color: var(--text-main-y);
+  font-weight: 400;
+}
+
+.keyword {
+  color: var(--text-main-o);
+  font-weight: bold;
+}
+
+.type {
+  color: var(--text-main-g);
+  font-weight: bold;
+}
+
+.string {
+  color: var(--text-main-b);
+}
+
+.number {
+  color: var(--text-main-p);
+}
+
+a {
+  color: var(--text-main-b);
+}
+
+/* syntax content */
+
+/* media queries */
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 550px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .content1 {
+    position: relative;
+    top: auto;
+  }
+}
+
+/* media queries */
