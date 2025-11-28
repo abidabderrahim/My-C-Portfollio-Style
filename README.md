@@ -8,7 +8,7 @@ Welcome to the portfolio of **Abderrahim Abid**, a Full-Stack Developer, UI/UX D
 ---
 
 ## 🌐 Live Demo
-You can view the live portfolio here: [LIVE PORTFOLIO][(https:///)](https://my-portfollio-code-style.vercel.app/)
+You can view the live portfolio here: [LIVE PORTFOLIO][(https://my-portfollio-code-style.vercel.app/)]
 
 ---
 
